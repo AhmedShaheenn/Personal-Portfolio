@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/personal/static/css/main.6bcc03b0.css",
+    "main.js": "/personal/static/js/main.b88e9d91.js",
+    "static/js/787.749b4a44.chunk.js": "/personal/static/js/787.749b4a44.chunk.js",
+    "static/media/winnipeg.jpeg": "/personal/static/media/winnipeg.12ed9503f9964865d845.jpeg",
+    "static/media/full.png": "/personal/static/media/full.b23a1276453b46a373c7.png",
+    "static/media/Image.jpeg": "/personal/static/media/Image.f9845d8817c954243dfd.jpeg",
+    "static/media/sim.jpeg": "/personal/static/media/sim.2a1cefbdc0315462a1ff.jpeg",
+    "static/media/insta.png": "/personal/static/media/insta.023caa28efbf98701ee4.png",
+    "static/media/umgdd.jpeg": "/personal/static/media/umgdd.2c512beb35e9115ace15.jpeg",
+    "static/media/www.png": "/personal/static/media/www.4e17452862628ad6401f.png",
+    "index.html": "/personal/index.html",
+    "main.6bcc03b0.css.map": "/personal/static/css/main.6bcc03b0.css.map",
+    "main.b88e9d91.js.map": "/personal/static/js/main.b88e9d91.js.map",
+    "787.749b4a44.chunk.js.map": "/personal/static/js/787.749b4a44.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6bcc03b0.css",
+    "static/js/main.b88e9d91.js"
+  ]
+}
