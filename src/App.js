@@ -28,7 +28,7 @@ const ProgressBar = ({ value, width = "w-full", height = "h-2" }) => {
 const App = () => {
   return (
     <div className="bg-black">
-      {/* <Matrix fullscreen={true} color={'#FF0000'} /> */}
+      {/* <Matrix fullscreen={rue} color={'#FF0000'} /> */}
       <div className="sticky top-0 z-50 mr-4 grid grid-cols-10 bg-black text-white">
         <div className="col-span-5">
           <a href="https://www.github.com/CenizASH">
