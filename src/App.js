@@ -1,5 +1,5 @@
-// import Matrix from 'react-matrix-effect'
 import React from "react";
+import MatrixBackground from "./Matrix";
 import full from "./components/pic/full.png";
 import git from "./components/pic/git.jpeg";
 import gmail from "./components/pic/gmail.png";
@@ -10,7 +10,6 @@ import sim from "./components/pic/sim.jpeg";
 import umgdd from "./components/pic/umgdd.jpeg";
 import winnipeg from "./components/pic/winnipeg.jpeg";
 import www from "./components/pic/www.png";
-// import Matrix from "react-matrix-effect";
 
 const ProgressBar = ({ value, width = "w-full", height = "h-2" }) => {
   const error = value < 0 || value > 100;
@@ -20,7 +19,7 @@ const ProgressBar = ({ value, width = "w-full", height = "h-2" }) => {
   else progressClassName = `relative ${height} bg-white`;
 
   return (
-    <div className={`${height} ${width} blue my-auto inline-block`}>
+    <div className={`${height} ${width} bg-black my-auto inline-block`}>
       <div className={progressClassName} style={{ width: `${value}%` }}></div>
     </div>
   );
@@ -47,9 +46,9 @@ function FadeInSection(props) {
 
 const App = () => {
   return (
-    <div className="bg-black">
+    <div className="">
       <div id="home" />
-      {/* <Matrix /> */}
+      return <MatrixBackground />;
       <div className="sticky top-0 z-50 pr-4 grid grid-cols-10 bg-black text-white">
         <div className="col-span-5">
           <a href="https://www.github.com/CenizASH">
@@ -97,25 +96,25 @@ const App = () => {
       </div>
       <div className="h-screen">
         {/* HOME */}
-        <div className="m-40 flex items-center justify-between gap-4 text-white">
-          <div>
-            <p className="pb-4 text-3xl">Hi, I&apos;m Ahmed.</p>
-            <p className="pb-4 text-4xl">
-              I&apos;m a Software Developer/ Junior Software Engineer.
-            </p>
-            <p className="pb-4 text-3xl">I code smarter, not harder.</p>
+        <FadeInSection>
+          <div className="m-40 flex items-center justify-between gap-4 text-white">
+            <div className="bg-black">
+              <p className="pb-4 text-3xl">Hi, I&apos;m Ahmed.</p>
+              <p className="pb-4 text-4xl">
+                I&apos;m a Full-Stack Developer/ Junior Software Engineer.
+              </p>
+              <p className="pb-4 text-3xl">I code smarter, not harder.</p>
+            </div>
+            <div>
+              <img className="w-96 rounded-full" alt="N/A" src={image} />
+            </div>
           </div>
-          <div>
-            <img className="w-96 rounded-full" alt="N/A" src={image} />
-          </div>
-        </div>
+        </FadeInSection>
       </div>
-
       {/* SKILLS */}
-
       <div
         id="skills"
-        className="navy items-top  h-screen  px-52 py-20 align-top text-orange-400"
+        className="bg-emerald-900 items-top  h-screen  px-52 py-20 align-top text-orange-400"
       >
         <FadeInSection>
           <p className="col-span-12 mx-auto pb-24 text-center text-6xl">
@@ -123,53 +122,53 @@ const App = () => {
           </p>
           <div className="flex justify-between gap-[300px]">
             <div className="grid grid-cols-6 gap-14">
-              <p className="col-span-1">JAVA</p>
+              <p className="col-span-1 font-semibold">JAVA</p>
               <div className="col-span-5">
                 <ProgressBar value={90} />
               </div>
-              <p className="col-span-1">JavaScript</p>
+              <p className="col-span-1 font-semibold">JavaScript</p>
               <div className="col-span-5">
                 <ProgressBar value={70} />
               </div>
-              <p className="col-span-1">Python</p>
+              <p className="col-span-1 font-semibold">Python</p>
               <div className="col-span-5">
                 <ProgressBar value={80} />
               </div>
-              <p className="col-span-1">C</p>
+              <p className="col-span-1 font-semibold">C</p>
               <div className="col-span-5">
                 <ProgressBar value={80} />
               </div>
-              <p className="col-span-1">HTML</p>
+              <p className="col-span-1 font-semibold">HTML</p>
               <div className="col-span-5">
                 <ProgressBar value={80} />
               </div>
-              <p className="col-span-1">C#</p>
+              <p className="col-span-1 font-semibold">C#</p>
               <div className="col-span-5">
                 <ProgressBar value={70} />
               </div>
             </div>
             <div className="grid grid-cols-6 gap-14">
-              <p className="col-span-1">CSS</p>
+              <p className="col-span-1 font-semibold">CSS</p>
               <div className="col-span-5">
                 <ProgressBar value={80} />
               </div>
-              <p className="col-span-1">C++</p>
+              <p className="col-span-1 font-semibold">C++</p>
               <div className="col-span-5">
                 <ProgressBar value={80} />
               </div>
-              <p className="col-span-1">React.js</p>
+              <p className="col-span-1 font-semibold">React.js</p>
               <div className="col-span-5">
                 <ProgressBar value={70} />
               </div>
-              <p className="col-span-1">SQL</p>
+              <p className="col-span-1 font-semibold">SQL</p>
               <div className="col-span-5">
                 <ProgressBar value={90} />
               </div>
-              <p className="col-span-1">Git/ Github</p>
+              <p className="col-span-1 font-semibold">Git/ Github</p>
               <div className="col-span-5">
                 <ProgressBar value={70} />
               </div>
-              <p className="col-span-1">Prolog/ LISP</p>
+              <p className="col-span-1 font-semibold">Prolog/ LISP</p>
               <div className="col-span-5">
                 <ProgressBar value={70} />
               </div>
@@ -177,11 +176,10 @@ const App = () => {
           </div>
         </FadeInSection>
       </div>
-
       {/* EXPERIENCE */}
       <div
         id="experience"
-        className="navy flex h-full flex-col items-center gap-28 px-40 py-20 text-orange-400"
+        className="bg-emerald-900 flex h-full flex-col items-center px-40 py-20 text-orange-400"
       >
         <FadeInSection>
           <p className="pb-16 text-center text-6xl">EXPERIENCE + PROJECTS</p>
@@ -231,11 +229,9 @@ const App = () => {
                 Personal portfolio website
               </p>
               <p className="">
-                Using JS, HTML, and CSS with a local team I was trained and
-                helped with developing a Canadian based web development start
-                up. After group design discussions, I worked on implementing the
-                team&apos;s thoughts and ideas by turning them into functional
-                frontend/ backend code.
+                Using React, JS, HTML, and CSS I built and deployed this website
+                to showcase some of my projects as well as my skills in
+                full-stack web development.
               </p>
             </div>
             <div className="col-span-3 flex justify-end p-2">
@@ -262,7 +258,7 @@ const App = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-10 items-center gap-6">
+          <div className="grid grid-cols-10 items-center gap-6  pb-10">
             <div className="col-span-7 p-2">
               <p className="text-lg font-semibold text-white">
                 Game of Life Simulation
@@ -294,45 +290,46 @@ const App = () => {
           </div>
         </FadeInSection>
       </div>
-
       {/* CONTACT */}
       <FadeInSection>
         <div
           id="contact"
-          className="grid h-screen grid-cols-12 gap-4 bg-black px-40 text-orange-400"
+          className="grid h-screen grid-cols-12 gap-4  px-40 text-orange-400"
         >
-          <p className="col-span-12 mx-auto mt-20 pb-16 text-6xl">CONTACT</p>
+          <p className="col-span-12 mx-auto mt-20 text-6xl">
+            <p className="bg-black">CONTACT</p>
+          </p>
 
           <a
             href="https://www.github.com/CenizASH"
             className="col-span-3 mx-auto w-20"
           >
-            <img alt="N/A" src={git} />
+            <img className="bg-black" alt="N/A" src={git} />
           </a>
 
           <a
             href="https://www.linkedin.com/in/Ahmed-Shaheen-/"
             className="col-span-3 mx-auto w-16"
           >
-            <img alt="N/A" src={linkedin} />
+            <img className="bg-black" alt="N/A" src={linkedin} />
+          </a>
+
+          <a
+            href="mailto:ahmedshaheen850@gmail.com"
+            className="col-span-3 mx-auto w-16"
+          >
+            <img className="bg-black" alt="N/A" src={gmail} />
           </a>
 
           <a
             href="https://www.instagram.com/a7mdshaheen_/"
             className="col-span-3 mx-auto w-16"
           >
-            <img alt="N/A" src={gmail} />
-          </a>
-
-          <a
-            href="https://www.instagram.com/a7mdshaheen_/"
-            className="col-span-3 mx-auto w-16"
-          >
-            <img alt="N/A" src={insta} />
+            <img className="bg-black" alt="N/A" src={insta} />
           </a>
           <div className="col-span-12 self-end">
             <hr className="mx-auto mb-2 w-10/12" />
-            <p className="col-span-12 pb-6 text-center text-xs text-orange-400">
+            <p className="col-span-12 pb-6 text-center text-xs text-orange-400 bg-black">
               AHMED SHAHEEN © 2023
             </p>
           </div>
@@ -344,16 +341,3 @@ const App = () => {
 };
 
 export default App;
-
-// <div className="col-span-6 flex justify-end text-right">
-//             <p className="col-spa">CSS</p>
-//             <div className="col-span">
-//               <ProgressBar value={80} />
-//             </div>
-//           </div>
-//           <div className="col-span-6 flex justify-end text-right">
-//             <p className="col-spa">CSSssss</p>
-//             <div className="col-span">
-//               <ProgressBar value={80} />
-//             </div>
-//           </div>
