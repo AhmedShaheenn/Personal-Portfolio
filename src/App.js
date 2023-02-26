@@ -10,6 +10,7 @@ import sim from "./components/pic/sim.jpeg";
 import umgdd from "./components/pic/umgdd.jpeg";
 import winnipeg from "./components/pic/winnipeg.jpeg";
 import www from "./components/pic/www.png";
+// import Matrix from "react-matrix-effect";
 
 const ProgressBar = ({ value, width = "w-full", height = "h-2" }) => {
   const error = value < 0 || value > 100;
@@ -48,6 +49,7 @@ const App = () => {
   return (
     <div className="bg-black">
       <div id="home" />
+      {/* <Matrix /> */}
       <div className="sticky top-0 z-50 pr-4 grid grid-cols-10 bg-black text-white">
         <div className="col-span-5">
           <a href="https://www.github.com/CenizASH">
