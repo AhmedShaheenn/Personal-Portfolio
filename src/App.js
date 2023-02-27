@@ -48,7 +48,7 @@ const App = () => {
   return (
     <div className="">
       <div id="home" />
-      return <MatrixBackground />;
+      <MatrixBackground />
       <div className="fixed w-screen top-0 z-50 pr-4 grid grid-cols-10 bg-black text-white">
         <div className="col-span-5">
           <a href="https://www.github.com/CenizASH">
@@ -98,7 +98,7 @@ const App = () => {
         {/* HOME */}
         <FadeInSection>
           <div className="m-40 flex items-center justify-between gap-4 text-white">
-            <div className="bg-black">
+            <div className="bg-black p-2">
               <p className="pb-4 text-3xl">Hi, I&apos;m Ahmed.</p>
               <p className="pb-4 text-4xl">
                 I&apos;m a Full-Stack Developer/ Junior Software Engineer.
@@ -297,7 +297,7 @@ const App = () => {
           className="grid h-screen grid-cols-12 gap-4  px-40 text-orange-400"
         >
           <p className="col-span-12 mx-auto mt-20 text-6xl">
-            <p className="bg-black">CONTACT</p>
+            <p className="bg-black p-2">CONTACT</p>
           </p>
 
           <a
