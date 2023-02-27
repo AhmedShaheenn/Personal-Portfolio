@@ -49,7 +49,7 @@ const App = () => {
     <div className="">
       <div id="home" />
       return <MatrixBackground />;
-      <div className="sticky top-0 z-50 pr-4 grid grid-cols-10 bg-black text-white">
+      <div className="fixed w-screen top-0 z-50 pr-4 grid grid-cols-10 bg-black text-white">
         <div className="col-span-5">
           <a href="https://www.github.com/CenizASH">
             <img className="w-16 p-2" alt="N/A" src={git} />
