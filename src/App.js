@@ -56,7 +56,7 @@ const App = () => {
           </a>
         </div>
 
-        <div className="col-span-5 flex justify-end gap-16">
+        <div className="col-span-5 flex justify-end gap-16 pr-8">
           <button
             className="p-2 hover:text-orange-400"
             onClick={() => {
