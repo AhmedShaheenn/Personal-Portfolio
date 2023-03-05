@@ -16,7 +16,7 @@ const ProgressBar = ({ value, width = "w-full", height = "h-2" }) => {
   let progressClassName;
   if (error)
     progressClassName = `relative rounded-lg ${height} w-full bg-red-500`;
-  else progressClassName = `relative ${height} bg-white`;
+  else progressClassName = `relative ${height} bg-gray-400`;
 
   return (
     <div className={`${height} ${width} bg-black my-auto inline-block`}>
@@ -98,7 +98,7 @@ const App = () => {
         {/* HOME */}
         <FadeInSection>
           <div className="m-40 flex items-center justify-between gap-4 text-white">
-            <div className="bg-black p-2">
+            <div className="bg-gray-400 p-2 bg-opacity-50">
               <p className="pb-4 text-3xl">Hi, I&apos;m Ahmed.</p>
               <p className="pb-4 text-4xl">
                 I&apos;m a Full-Stack Developer/ Junior Software Engineer.
@@ -114,13 +114,13 @@ const App = () => {
       {/* SKILLS */}
       <div
         id="skills"
-        className="bg-emerald-900 items-top  h-screen  px-52 py-20 align-top text-orange-400"
+        className="bg-white items-top  h-screen  px-52 py-20 align-top text-orange-400"
       >
         <FadeInSection>
           <p className="col-span-12 mx-auto pb-24 text-center text-6xl">
             SKILLS
           </p>
-          <div className="flex justify-between gap-[300px]">
+          <div className="flex justify-between gap-[300px] text-black">
             <div className="grid grid-cols-6 gap-14">
               <p className="col-span-1 font-semibold">JAVA</p>
               <div className="col-span-5">
@@ -179,17 +179,17 @@ const App = () => {
       {/* EXPERIENCE */}
       <div
         id="experience"
-        className="bg-emerald-900 flex h-full flex-col items-center px-40 py-20 text-orange-400"
+        className="bg-white flex h-full flex-col items-center px-40 py-20 text-orange-400"
       >
         <FadeInSection>
           <p className="pb-16 text-center text-6xl">EXPERIENCE + PROJECTS</p>
 
           <div className="grid grid-cols-10 items-center gap-6">
             <div className="col-span-7 p-2">
-              <p className="text-lg font-semibold text-white">
+              <p className="text-lg font-semibold text-gray-400 underline">
                 Full Stack Development Trainee @ EZOLOPY
               </p>
-              <p className="">
+              <p className="text-black">
                 Using JS, HTML, and CSS with a local team I was trained and
                 helped with developing a Canadian based web development start
                 up. After group design discussions, I worked on implementing the
@@ -207,11 +207,11 @@ const App = () => {
               <img className="w-40" alt="N/A" src={umgdd} />
             </div>
             <div className="col-span-7 p-2">
-              <p className="text-right text-lg font-semibold text-white">
+              <p className="text-lg font-semibold text-gray-400 underline">
                 Co-Founder/ Game design Programmer @ University of Manitoba Game
                 Design and Development
               </p>
-              <p className="text-right">
+              <p className="text-right text-black">
                 Alongside a team of at least ten programmers and three
                 designers, my university colleagues and I worked on developing
                 runner and open world games during weekends using Unity and C#.
@@ -225,10 +225,10 @@ const App = () => {
 
           <div className="grid grid-cols-10 items-center gap-6">
             <div className="col-span-7 p-2">
-              <p className="text-lg font-semibold text-white">
+              <p className="text-lg font-semibold text-gray-400 underline">
                 Personal portfolio website
               </p>
-              <p className="">
+              <p className="text-black">
                 Using React, JS, HTML, and CSS I built and deployed this website
                 to showcase some of my projects as well as my skills in
                 full-stack web development.
@@ -244,10 +244,10 @@ const App = () => {
               <img className="w-48" alt="N/A" src={winnipeg} />
             </div>
             <div className="col-span-7 p-2">
-              <p className="text-right text-lg font-semibold text-white">
+              <p className="text-lg font-semibold text-gray-400 underline">
                 Winnipeg Tourist Guide
               </p>
-              <p className="text-right">
+              <p className="text-right text-black">
                 Using the Redwood.JS framework, JS, HTML, and CSS I built a
                 dynamic multi-webpage website that guides a Winnipeg tourist on
                 what to eat, what medium of transportation to use, what
@@ -260,10 +260,10 @@ const App = () => {
 
           <div className="grid grid-cols-10 items-center gap-6  pb-10">
             <div className="col-span-7 p-2">
-              <p className="text-lg font-semibold text-white">
+              <p className="text-lg font-semibold text-gray-400 underline">
                 Game of Life Simulation
               </p>
-              <p className="">
+              <p className="text-black">
                 Using C, I built an implementation of the classic "Game of Life"
                 simulation developed by mathematician John Conway in the 1970s.
               </p>
@@ -275,7 +275,7 @@ const App = () => {
 
           <div className="grid grid-cols-10 items-center gap-6">
             <div className="col-span-10 p-2">
-              <p className="text-lg font-extrabold text-white text-center">
+              <p className="text-lg font-extrabold text-black text-center">
                 For more projects, visit my Github{" "}
                 <button>
                   <a
