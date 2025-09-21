@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import React from "react";
 import MatrixBackground from "./Matrix";
 import full from "./components/pic/full.png";
@@ -45,11 +46,15 @@ function FadeInSection(props) {
 }
 
 const App = () => {
+  useEffect(() => {
+    window.history.scrollRestoration = "manual"; // disable browser’s restore
+    window.scrollTo(0, 0); // jump to top
+  }, []);
   return (
     <div className="">
       <div id="home" />
       <MatrixBackground />
-      <div className="sticky w-screen top-0 z-50 pr-4 grid grid-cols-10 bg-black text-white">
+      <div className="sticky w-full top-0 z-50 pr-4 grid grid-cols-10 bg-black text-white">
         <div className="col-span-5">
           <a href="https://www.github.com/CenizASH">
             <img className="w-16 p-2" alt="N/A" src={git} />
@@ -97,16 +102,25 @@ const App = () => {
       <div className="h-screen">
         {/* HOME */}
         <FadeInSection>
-          <div className="m-40 flex items-center justify-between gap-4 text-white">
-            <div className="bg-gray-400 p-2 bg-opacity-50">
-              <p className="pb-4 text-3xl">Hi, I&apos;m Ahmed.</p>
-              <p className="pb-4 text-4xl">
-                I&apos;m a Full-Stack Developer/ Junior Software Engineer.
+          <div className="flex text-white m-[10%] grid grid-cols-7 items-center">
+            <div className="bg-gray-600 p-[2%] bg-opacity-75 col-span-4 ring-8 ring-black">
+              <p className="pb-4 text-4xl flex justify-center">Hi There!</p>
+              <p className="pb-4 text-3xl">
+                I&apos;m Ahmed. I&apos;m a Full-Stack Developer based in
+                Winnipeg, Canada with experience building startup software. I
+                enjoy building software that turn problems into solutions.
               </p>
-              <p className="pb-4 text-3xl">I code smarter, not harder.</p>
+              <p className="text-3xl">
+                I'm always open to offers for full-time work or contract web
+                development. Please continue reading to learn more about me.
+              </p>
             </div>
-            <div>
-              <img className="w-96 rounded-full" alt="N/A" src={image} />
+            <div className="col-start-6 col-span-2">
+              <img
+                className="rounded-full ring-8 ring-black"
+                alt="N/A"
+                src={image}
+              />
             </div>
           </div>
         </FadeInSection>
