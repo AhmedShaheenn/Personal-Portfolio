@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Personal-Portfolio/static/css/main.37d62d2b.css",
-    "main.js": "/Personal-Portfolio/static/js/main.ae1172b2.js",
+    "main.css": "/Personal-Portfolio/static/css/main.cab8d532.css",
+    "main.js": "/Personal-Portfolio/static/js/main.46b05d51.js",
     "static/js/787.749b4a44.chunk.js": "/Personal-Portfolio/static/js/787.749b4a44.chunk.js",
     "static/media/winnipeg.jpeg": "/Personal-Portfolio/static/media/winnipeg.12ed9503f9964865d845.jpeg",
     "static/media/Image.jpeg": "/Personal-Portfolio/static/media/Image.f6c404fd4bccadbf36a7.jpeg",
@@ -11,12 +11,12 @@
     "static/media/umgdd.jpeg": "/Personal-Portfolio/static/media/umgdd.2c512beb35e9115ace15.jpeg",
     "static/media/www.png": "/Personal-Portfolio/static/media/www.4e17452862628ad6401f.png",
     "index.html": "/Personal-Portfolio/index.html",
-    "main.37d62d2b.css.map": "/Personal-Portfolio/static/css/main.37d62d2b.css.map",
-    "main.ae1172b2.js.map": "/Personal-Portfolio/static/js/main.ae1172b2.js.map",
+    "main.cab8d532.css.map": "/Personal-Portfolio/static/css/main.cab8d532.css.map",
+    "main.46b05d51.js.map": "/Personal-Portfolio/static/js/main.46b05d51.js.map",
     "787.749b4a44.chunk.js.map": "/Personal-Portfolio/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37d62d2b.css",
-    "static/js/main.ae1172b2.js"
+    "static/css/main.cab8d532.css",
+    "static/js/main.46b05d51.js"
   ]
 }
