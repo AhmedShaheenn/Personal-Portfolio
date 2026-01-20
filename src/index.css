@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -9,6 +14,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Ensure navbar stays sticky */
+#navbar {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 50;
 }
 
 code {
@@ -49,4 +63,24 @@ code {
   opacity: 1;
   transform: none;
   visibility: visible;
+}
+
+/* Scroll positioning for sections */
+#skills,
+#experience,
+#contact {
+  scroll-margin-top: 0;
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 640px) {
+  button,
+  a {
+    -webkit-tap-highlight-color: rgba(239, 131, 84, 0.3);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
